@@ -129,25 +129,6 @@ padding-top: 12px;
 }
 
 
-/* .img-1, .img-2{
-    grid-area: sequence-1;
-} 
-.img-3, .img-4, .img-5{
-    grid-area: sequence-2;
-} 
-.img-6, .img-7{
-    grid-area: sequence-3;
-} 
-
-.destination-img-container{
-display: grid;
-gap: 20px;
-grid-template-areas: 
-"sequence-1 sequence-1 sequence-1"
-"sequence-2 sequence-2 sequence-2"
-"sequence-3 sequence-3 sequence-3";
-} */
-
 /* Dentination styles  */
 .destination-section{
     margin: 80px 150px;
@@ -162,12 +143,12 @@ grid-template-areas:
     display: flex;
     width: 100%;
 }
-sequence-2{
+.sequence-2{
     display: flex;
     width: 100%;
 
 }
-sequence-3{
+.sequence-3{
     display: flex;
     width: 100%;
 
@@ -193,6 +174,20 @@ sequence-3{
     margin-top: 30px;
 }
 
+/* .container1 {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .text1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+  } */
 
  /* Choose section styles */
 
@@ -339,3 +334,244 @@ background: rgba(19, 19, 24, 0.10);
     padding-top: 50px;
     
  }
+
+ /* resume-adress section styles */
+.section-title{
+    text-align: center;
+    font-size: 2rem;
+}
+ .resume-braches{
+    margin: 0px 320px;
+ }
+.resume-column-titel {
+    color: #181818;
+    font-size: 35px;
+    font-weight: 700;
+
+}
+
+.resume-container {
+    display: flex;
+    gap: 50px;
+}
+
+
+.resume-item-title {
+    color: var(--dark-02, #474747);
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.resume-item-institute {
+    color: var(--dark-03, #757575);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.resume-item-description {
+    color: var(--dark-03, #757575);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.resume-container hr {
+    margin: 30px;
+
+}
+
+
+/* Styles for Mobile Device  */
+
+
+@media screen and (max-width:600px) {
+    nav{
+        flex-direction: column;
+    }
+
+    *{
+        margin: 2px 5px;
+    }
+    header{
+        margin: 0px 5px ;
+    }
+    .header-container{
+       width: 560px;
+        height: 700px;
+        background-size: cover;
+        align-items: center;
+        
+    }
+
+    .header-form{
+    
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+       
+        padding:2px;
+        gap: 10px;
+        
+        margin-left: 190px;
+    }
+    .popular-container{
+        flex-direction: column;
+        margin: 5px 5px;
+    }
+    .popular-title{
+       
+    font-size: 2.8rem;
+    font-weight: 800;
+    }
+    .popular-pera{
+      
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding-top: 5px;
+    }
+
+    .popular-img-container img{
+        width:555px;
+    }
+    
+    .destination-section{
+        margin: 10px 5px;
+        
+    }
+
+    .destination-img-container{
+        width: 100%;
+    }
+    .sequence-1{
+        flex-direction: column;
+    }
+    .sequence-2{
+        flex-direction: column;
+    
+    }
+    .sequence-3{
+        flex-direction: column;
+    
+    }
+
+    .img-1,.img-2{
+        width: 555px;
+        height: 300px;
+    }
+    .img-3,.img-4,.img-5{
+        width:555px;
+        height: 300px;
+    }
+    .img-6,.img-7{
+        width: 555px;
+        height: 300px;
+    }
+    .destination-description{
+        margin-top: 15px;
+    }
+
+
+
+    .choose-section{
+        margin: 10px 5px;
+    text-align: center;
+     }
+     
+    .div-2{
+    
+        flex-direction: column;
+        gap: 5px;
+        
+    }
+    .div-2-1{
+    padding: 5px;
+    }
+    
+    .div-2-2{
+    padding: 5px;
+    }
+    .div-3{
+    padding: 5px;
+    margin: 10px 5px ;
+       
+    }
+   
+     .resume-braches{
+        margin: 0px 5px;
+     }
+    
+    
+    .resume-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+     
+    .resume-container hr {
+        margin: 10px;
+    
+    }
+
+    .letter-section{
+        flex-direction: column;
+        margin: 5px 5px;
+        gap: 5px;
+    }
+   
+   
+    
+    .letter-form{
+        border-radius: 16px;
+    border: 1px solid #FF5400;
+    width: 510px;
+    height: 360px;
+    flex-shrink: 0;
+    padding: 10px;
+    
+    }
+   
+      
+       
+       .letter-img img{
+        width: 555px;
+        height: 400px;
+       }
+       .sell-poster{
+        
+    width: 180px;
+    height: 120px;
+    transform: rotate(-19.628deg);
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #FF5400;
+    position: relative;
+    top:-170px;
+    left:350px;
+       }
+
+
+
+     .footer-icons img {
+        margin:10px 10px ;
+     }
+     .footer-hr{
+        width: 540px;
+    height: 1px;
+    background: rgba(19, 19, 24, 0.10);
+     }
+     .copyright-text{
+        padding-top: 10px;
+        
+     }
+
+     .footer{
+    width: 565px;
+     }
+
+    
+}
+
+
